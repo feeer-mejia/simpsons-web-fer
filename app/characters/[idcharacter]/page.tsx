@@ -1,13 +1,6 @@
+import { ParamsCharacter } from "@/app/types/character";
 
-
-interface ParansCharacter {
-
-    params: Promise<{
-        idcharacter: string
-    }>
-}
-
-export default async function IdCharacter( { params }: ParansCharacter ) {
+export default async function IdCharacter( { params }: ParamsCharacter ) {
 
     const { idcharacter } = await params;
     return (
